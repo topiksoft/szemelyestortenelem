@@ -10,7 +10,7 @@ tags:
 - megjelenés
 ---
 
-A Személyes Történelem gondozásában jelent meg [Szabó Zsuzsi könyve](../konyveink/tusz-voltam-adenben/), melyben a szerző az élményeit meséli el Dél-Jemen fővárosában, Ádenben 1986. január 13-án kitört törzsi polgárháborúról. Ebbe váratlanul belecsöppenve volt kénytelen menekülni tizenegy hónapos kisfiával. Boldog kismamaként és az ádeni egyetem hallgatójaként kellett szembesülnie azzal, hogyan szabadult el hirtelen a pokol a fővárosban, hogyan vált valóságos rémálommá az élet a közel-keleti országban.
+A Személyes Történelem gondozásában jelent meg [Szabó Zsuzsi könyve](/konyveink/tusz-voltam-adenben/), melyben a szerző az élményeit meséli el Dél-Jemen fővárosában, Ádenben 1986. január 13-án kitört törzsi polgárháborúról. Ebbe váratlanul belecsöppenve volt kénytelen menekülni tizenegy hónapos kisfiával. Boldog kismamaként és az ádeni egyetem hallgatójaként kellett szembesülnie azzal, hogyan szabadult el hirtelen a pokol a fővárosban, hogyan vált valóságos rémálommá az élet a közel-keleti országban.
 
 Eleinte a magyar rezidencia biztonságos földszintjére húzódva várták a híreket a békekötésről, mindhiába. A harcoló törzsek makacsul ragaszkodtak a területek fegyverrel való megszerzéséhez, illetve megtartásához. Félelemmel telve hallgatták az ágyúzást, a tankok zúgását és a géppuskák kelepelését. Keservesen teltek a napok folyóvíz és hírek nélkül, míg végül a sokadik evakuálási kísérlet során sikerült épségben kijutniuk az országból.
 

@@ -1,0 +1,57 @@
+baseURL: http://0.0.0.0:1313/
+#baseURL: http://localhost:1313/
+#baseURL: http://topik.ddns.net:1313/
+#baseURL: https://szemelyestortenelem.hu/
+languageCode: hu-hu
+title: Személyes Történelem
+DateFormat: "2006. 1. 2."
+theme: "szemelyestortenelem"
+font: "Georgia"
+permalinks:
+  hireink: /hireink/:filename/
+#env: production # to enable google analytics, opengraph, twitter-cards and schema.
+googleAnalytics: UA-85126524-1
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  description: "A Személyes Történelem Kiadó honlapja"
+  slogan: "a megőrzött magánemlékezet"
+  keywords: [könyvkiadás, emlékirat, visszaemlékezés, memoár]
+  author: ["Személyes Történelem Kiadó", "Soós Gábor"] # multiple authors
+  copyright: "© Ad Librum Kft. 2016-2021"
+
+  enableRobotsTXT: true
+  buildDrafts: false
+  buildFuture: false
+  buildExpired: false
+
+
+menu:
+  main:
+  - identifier: home
+    name: Kezdőlap
+    url: /
+    weight: 5
+  - identifier: konyveink
+    name: Kiadott emlékek
+    url: /konyveink
+    weight: 10
+  - identifier: hireink
+    name: Kiadói hírek
+    url: /hireink
+    weight: 20
+  - identifier: emlekiras
+    name: Emlékeim vannak
+    url: /tarsas-emlekiras
+    weight: 30
+  - identifier: kiadasrajelentkezes
+    name: Kéziratom van
+    url: /erdeklodes-visszaemlekezes-kiadasarol/
+    weight: 30
+  - identifier: rolunk
+    name: A kiadóról
+    url: /rolunk/
+    weight: 40

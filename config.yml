@@ -15,6 +15,14 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+markup:
+  goldmark:
+    renderHooks:
+      image:
+        enableDefault: true
+      link:
+        enableDefault: true
+
 caches:
   images:
     dir: :cacheDir/images

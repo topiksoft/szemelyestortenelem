@@ -14,6 +14,6 @@ Karinthy Frigyest a Fekete mise című novellájáért első és másod­fokon i
 
 Új sorozatunk, a *Százéves hírek* sajtóhíreken keresztül igyekszik mozaikszerűen megmutatni a korabeli mindennapokat. Az [első kötet](/konyveink/szazeves-hirek-1924/) 1924-ről szólt, ezt folytattuk most a következő évvel.
 
-A [kötet](/konyveink/szazeves-hirek-1925/) szerkesztői újra a kiadó munkatársai, Soós Gábor és Soós Anna voltak.
+A [kötet](konyveink/szazeves-hirek-1925/) szerkesztői újra a kiadó munkatársai, Soós Gábor és Soós Anna voltak.
 
-[![Százéves hírek. 1925 - borítókép](/covers/Szazeves-hirek-1925--medium.webp)](/konyveink/szazeves-hirek-1925/)
+[![Százéves hírek. 1925 - borítókép](covers/Szazeves-hirek-1925--medium.webp)](konyveink/szazeves-hirek-1925/)

@@ -8,9 +8,9 @@ offer:
   - name: "Az eddig megjelent könyveik érdekelnek"
     url: "konyveink/"
   - name: "Kéziratom van, amihez kiadót keresek"
-    url: "/erdeklodes-visszaemlekezes-kiadasarol/"
+    url: "erdeklodes-visszaemlekezes-kiadasarol/"
   - name: "Emlékeim vannak, amelyek megírásra várnak"
-    url: "/tarsas-emlekiras/"
+    url: "tarsas-emlekiras/"
   - name: "A kiadóról szeretnék többet megtudni"
-    url: "/rolunk/"
+    url: "rolunk/"
 ---

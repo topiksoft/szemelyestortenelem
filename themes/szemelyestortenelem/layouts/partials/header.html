@@ -1,0 +1,29 @@
+<header>
+
+{{ if not .IsHome }}
+<!-- navigation -->
+<div>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" navlabel="{{ .Identifier }}" class="active">{{ .Name }}</a>
+      {{ end }}
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+</div>
+{{ end }}
+
+<!-- logo -->
+<div style="margin:auto; width: 80%; text-align=center; padding:15px">
+  <p>
+    <a href="{{ .Site.BaseURL }}">
+      <img class="" src="{{ .Site.BaseURL }}/img/szemelyes_tortenelem_50szazalek.jpg" alt="{{ .Site.Params.description }}">
+    </a>
+  </p>
+  <p style="text-align:center;font-weight:bold">{{ .Site.Params.slogan }}</p>
+</div>
+
+</header>

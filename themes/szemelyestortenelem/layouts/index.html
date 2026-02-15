@@ -1,0 +1,16 @@
+{{- partial "head.html" . -}}
+
+{{- partial "header.html" . -}}
+
+<div id="offers">
+
+  {{ range .Params.Offer }}
+	<div><p><a href="{{ .url }}">{{ .name }}</a></p></div>
+  {{ end }}
+</div>
+
+<div>
+  {{ .Content }}
+</div>
+
+{{- partial "footer.html" . -}}

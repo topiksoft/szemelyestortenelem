@@ -1,0 +1,13 @@
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+<div class="article-meta">
+  <h1><span class="title">{{ .Title | markdownify }}</span></h1>
+  {{ if (gt .Params.date 0) }}<p class="date">{{ .Date.Format "2006.01.02." }}</p>{{ end }}
+</div>
+
+<main style="margin-top:20px;">
+  {{ .Content }}
+</main>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,16 @@
+{{- partial "head.html" . -}}
+
+{{- partial "header.html" . -}}
+
+<main>
+  <div>
+   <div class="article-meta"><h1><span class="title">{{ .Title }}</span></h1></div>
+	{{ range .Pages.ByDate.Reverse }}
+		<div>
+			<p><a href='{{.Permalink}}' title='{{.Params.Title}}'>{{dateFormat "2006. 01. 02." .Params.Date}} {{.Params.Title}}</a></p>
+		</div>
+	{{ end }}
+  </div>
+</main>
+
+{{- partial "footer.html" . -}}

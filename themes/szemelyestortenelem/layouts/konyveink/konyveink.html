@@ -1,0 +1,30 @@
+{{- partial "head.html" . -}}
+
+<body>
+
+{{- partial "header.html" . -}}
+
+<main>
+  <div>
+   <div class="article-meta"><h1><span class="title">A Személyes Történelem Kiadó által kiadott kötetek</span></h1></div>
+      {{ range .Pages.ByWeight}}
+			<div style="overflow:auto; padding-top:5px">
+				<div class="cover" style="margin:auto; max-width:80%;">
+					<a href='{{.Permalink}}' title='Tovább a könyv katalógus oldalára: {{.Params.Booktitle}}'>
+						<img src="{{.Site.BaseURL}}covers/{{.Params.Cover}}--small.webp" style="max-width:100%;height:auto;">
+			    </a>
+	  	</div>
+		<div class="desc">
+			<a style="" href='{{.Permalink}}'><strong>{{ .Params.Author }}: {{ .Params.Booktitle }}</strong></a> {{.Params.Abstractshort}} ({{.Params.Pubyear}})
+		</div>
+	</div>
+      {{ end }}
+  </div>
+</main>
+
+{{.Content}}
+
+{{- partial "footer.html" . -}}
+
+</body>
+</html>

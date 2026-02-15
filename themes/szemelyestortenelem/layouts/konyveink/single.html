@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+  <body>
+{{- partial "header.html" . -}}
+<main>
+  <div>
+	<div style="overflow:auto; padding-top:5px; padding-bottom:20px">
+		<div style="width:60%;margin:auto;"> <img src="{{.Site.BaseURL}}covers/{{.Params.Cover}}--medium.webp" style="max-width:100%;height:auto;"> </div>
+		<div style="width:80%;margin:auto;">
+			<p><strong>{{.Params.Abstractshort}}</strong></p>
+			{{$weight:=""}} {{with .Param "weight"}} {{$weight:= . }} {{end}}
+			<p>{{.Params.Pages}} oldal, {{.Params.Format}}, {{$weight}} {{.Params.Price}} ISBN {{.Params.Isbn}}</p>
+			<p>Megjelenés: {{.Params.Pubyear}}. {{.Params.Pubmonth}} {{.Params.Pubday}}.<p/>
+      {{if .Params.link_webshop}}
+        <p>Megvásárolható:
+        <a href="{{.Params.link_webshop}}"><img class="logo" src="{{.Site.BaseURL}}img/konyvesbolt.online.png" /></a>
+        {{if .Params.link_libri}}<a href="{{.Params.link_libri}}"><img class="logo" src="{{.Site.BaseURL}}img/libri.png" /></a>{{end}}
+        {{if .Params.link_lira}}<a href="{{.Params.link_lira}}"><img class="logo" src="{{.Site.BaseURL}}img/lira.png" /></a>{{end}}
+        {{if .Params.link_bookline}}<a href="{{.Params.link_bookline}}"><img class="logo" src="{{.Site.BaseURL}}img/bookline.png" /></a>{{end}}
+        {{if .Params.link_ekonyv}}<a href="{{.Params.link_ekonyv}}"><img class="logo" src="{{.Site.BaseURL}}img/ekonyv.jpg" /></a>{{end}}
+        </p>
+      {{end}}
+      <p>
+        {{if .Params.link_googlebooks}}Beleolvasás: <a href="{{.Params.link_googlebooks}}"><img class="logo" src="{{.Site.BaseURL}}img/googlebooks.png" /></a> {{end}}
+        {{if .Params.link_moly}}Vélemények: <a href="{{.Params.link_moly}}"><img class="logo" src="{{.Site.BaseURL}}img/moly.png" /></a>{{end}}
+      </p>
+		</div>
+		<div style="width:100%;">
+			<h2 style="text-align:left">{{.Params.Author}}: {{.Params.Booktitle}}</h2>
+			{{.Content}}
+		</div>
+  </div>
+  </div>
+
+  <div class="formcontainer">
+    <h2>Rendelje meg a könyvet egyszerűen!</h2>
+      <p>Az alábbi űrlappal bármely <a href='https://foxpost.hu/csomagautomatak' target='_blank'>Foxpost automatába</a> megrendelheti a <em>{{.Params.Booktitle}}</em> című könyvet {{.Params.Price}}-ért, amely a csomagolási és szállítási költséget is magában foglalja. A megrendelés beérkezte után a kollégánk emailen felveszi Önnel a kapcsolatot, hogy a pontos <a href='https://foxpost.hu/csomagautomatak' target='_blank'>csomagautomatát</a> és az egyéb kérdéseket (pl. céges számlázás) megbeszélje Önnel.</p>
+  <form action="/form-submitted.php" method='POST'>
+    <input type="hidden" name="service" value="Könyvrendelés">
+    <input type="hidden" name="booktitle" value="{{.Params.Booktitle}}">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Név</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Az Ön neve...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">E-mail</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Az Ön email címe...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="tel">Telefonszám</label>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="tel" name="tel" placeholder="Az Ön telefonszáma...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="msg">Megjegyzés (pl. a kiválasztott <a href='https://foxpost.hu/csomagautomatak' target='_blank'>csomagautomata neve</a>)</label>
+      </div>
+      <div class="col-75">
+        <textarea id="msg" name="msg" placeholder="Bármilyen közlendő a rendeléssel kapcsolatban..." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Mennyi öt meg öt? (számmal)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="antispam" name="antispam" placeholder="Mennyi öt+öt?">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Rendelés">
+    </div>
+  </form>
+  <p>Kérjük, hogy a megrendelés elindítása előtt olvassa el az <a href="../../rolunk/index.html#vásárlási-feltételek">Általános Felhasználási Feltételeinket</a>, amely az adatvédelmi szabályzatot is tartalmazza.
+</div>
+</main>
+{{- partial "footer.html" . -}}
+
+  </body>
+</html>

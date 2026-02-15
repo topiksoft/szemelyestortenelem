@@ -22,6 +22,12 @@ markup:
         enableDefault: true
       link:
         enableDefault: true
+module:
+  mounts:
+  - source: assets
+    target: assets
+  - source: static
+    target: assets
 
 caches:
   images:

@@ -6,7 +6,7 @@ excerpt: A Személyes Történelem Kiadó eddig megjelent könyvei
 title: Személyes Történelem Kiadó
 offer:
   - name: "Az eddig megjelent könyveik érdekelnek"
-    url: "/konyveink/"
+    url: "konyveink/"
   - name: "Kéziratom van, amihez kiadót keresek"
     url: "/erdeklodes-visszaemlekezes-kiadasarol/"
   - name: "Emlékeim vannak, amelyek megírásra várnak"
